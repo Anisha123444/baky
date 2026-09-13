@@ -1,39 +1,16 @@
-# BAKY - Offline Bakery Order & Profit Manager
+# React + Vite
 
-This is a personal/customized internal site for BAKY workers to manage orders, investments, menu items, and calculate profits.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Key Features
-- **Offline functionality**: Data is stored locally on your device in a JSON file without relying on the cloud.
-- **Order Management**: Add customer names, pick from dynamically populated menu items, auto-calculate totals.
-- **Profit Calculation**: View total sales vs total investments. Automatically divide profit evenly amongst 4 people (baidantika, Anisha, krrish, Yashi).
-- **Menu Customization**: Edit menu items, prices, enable/disable products, and change categories.
-- **Data Backup**: Download JSON backups or import them to restore your site.
+Currently, two official plugins are available:
 
-## Installation & Setup
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-1. **Install Node.js**: Ensure you have [Node.js](https://nodejs.org/) installed on your computer.
-2. **Open the project folder**: Open this folder `BAKY` in a terminal or command prompt.
-3. **Install Dependencies**:
-   Run the following command in the `BAKY` folder to install all required packages:
-   ```bash
-   npm install
-   ```
+## React Compiler
 
-## Starting the Application
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-To start the application, simply run:
-```bash
-npm run dev
-```
+## Expanding the Oxlint configuration
 
-This single command will concurrently:
-1. Start the backend local server (handling the local JSON database) on port `5000`.
-2. Start the frontend React server.
-
-Once the terminal says it's ready, open your web browser and go to:
-**http://localhost:5173**
-
-## Important Notes
-- **Data Storage**: All your data is saved in `backend/data/data.json`.
-- **No Internet Required**: Because everything is hosted locally, you do not need an internet connection to use the application. Just leave the terminal window open while using the app!
-- **To stop the app**: Press `Ctrl + C` in the terminal window.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
