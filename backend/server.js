@@ -4,8 +4,22 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 5000;
-const DATA_FILE = path.join(__dirname, 'data', 'data.json');
+const PORT = process.env.PORT || 5000;
+const IS_VERCEL = process.env.VERCEL || process.env.NODE_ENV === 'production';
+
+// Vercel filesystem is read-only except for /tmp
+const DEFAULT_DATA_FILE = path.join(__dirname, 'data', 'data.json');
+const TMP_DATA_FILE = '/tmp/data.json';
+const DATA_FILE = IS_VERCEL ? TMP_DATA_FILE : DEFAULT_DATA_FILE;
+
+// Ensure temp data file exists on Vercel
+if (IS_VERCEL && !fs.existsSync(TMP_DATA_FILE)) {
+  try {
+    fs.copyFileSync(DEFAULT_DATA_FILE, TMP_DATA_FILE);
+  } catch (e) {
+    console.error("Failed to copy data to /tmp", e);
+  }
+}
 
 app.use(cors());
 app.use(express.json());
@@ -153,6 +167,10 @@ app.post('/api/data/reset', (req, res) => {
   res.json({ success: true });
 });
 
-app.listen(PORT, () => {
-  console.log(`Backend server running on http://localhost:${PORT}`);
-});
+if (!IS_VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Backend server running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
