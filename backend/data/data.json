@@ -1,0 +1,206 @@
+{
+  "orders": [
+    {
+      "id": "1789273726853",
+      "customerName": "anshika",
+      "date": "2026-09-13T04:28:46.529Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Omelette",
+          "price": 45,
+          "category": "Egg Items",
+          "enabled": true,
+          "quantity": 1
+        }
+      ],
+      "total": 45
+    },
+    {
+      "id": "1789275065821",
+      "customerName": "hgfd",
+      "date": "2026-09-13T04:51:05.768Z",
+      "items": [
+        {
+          "id": "15",
+          "name": "Paneer Khichadi",
+          "price": 95,
+          "category": "Main Course",
+          "enabled": true,
+          "quantity": 1
+        }
+      ],
+      "total": 95
+    }
+  ],
+  "investments": [
+    {
+      "id": "1789274981713",
+      "amount": 29,
+      "description": "Order Cost: anshika (13 Sep) - ",
+      "date": "2026-09-13T04:49:41.660Z",
+      "orderId": "1789273726853"
+    },
+    {
+      "id": "1789275096894",
+      "amount": 45,
+      "description": "Order Cost: hgfd (13 Sep) - ",
+      "date": "2026-09-13T04:51:36.854Z",
+      "orderId": "1789275065821"
+    }
+  ],
+  "menu": [
+    {
+      "id": "1",
+      "name": "Omelette",
+      "price": 45,
+      "category": "Egg Items",
+      "enabled": true
+    },
+    {
+      "id": "2",
+      "name": "Bhurji",
+      "price": 45,
+      "category": "Egg Items",
+      "enabled": true
+    },
+    {
+      "id": "3",
+      "name": "Cheese Omelette",
+      "price": 55,
+      "category": "Egg Items",
+      "enabled": true
+    },
+    {
+      "id": "4",
+      "name": "Egg Roll",
+      "price": 65,
+      "category": "Egg Items",
+      "enabled": true
+    },
+    {
+      "id": "5",
+      "name": "Egg Curry",
+      "price": 79,
+      "category": "Egg Items",
+      "enabled": true
+    },
+    {
+      "id": "6",
+      "name": "Cheese Pasta",
+      "price": 99,
+      "category": "Pasta & Snacks",
+      "enabled": true
+    },
+    {
+      "id": "7",
+      "name": "Red Sauce Pasta",
+      "price": 99,
+      "category": "Pasta & Snacks",
+      "enabled": true
+    },
+    {
+      "id": "8",
+      "name": "Spaghetti",
+      "price": 99,
+      "category": "Pasta & Snacks",
+      "enabled": true
+    },
+    {
+      "id": "9",
+      "name": "Soya Momos",
+      "price": 100,
+      "category": "Pasta & Snacks",
+      "enabled": true
+    },
+    {
+      "id": "10",
+      "name": "Paneer Momos",
+      "price": 135,
+      "category": "Pasta & Snacks",
+      "enabled": true
+    },
+    {
+      "id": "11",
+      "name": "Paneer Roll",
+      "price": 75,
+      "category": "Pasta & Snacks",
+      "enabled": true
+    },
+    {
+      "id": "12",
+      "name": "Soup",
+      "price": 60,
+      "category": "Pasta & Snacks",
+      "enabled": true
+    },
+    {
+      "id": "13",
+      "name": "Paneer Pulao",
+      "price": 59,
+      "category": "Main Course",
+      "enabled": true
+    },
+    {
+      "id": "14",
+      "name": "Veg Khichdi",
+      "price": 70,
+      "category": "Main Course",
+      "enabled": true
+    },
+    {
+      "id": "15",
+      "name": "Paneer Khichadi",
+      "price": 95,
+      "category": "Main Course",
+      "enabled": true
+    },
+    {
+      "id": "16",
+      "name": "Jeera Rice",
+      "price": 59,
+      "category": "Main Course",
+      "enabled": true
+    },
+    {
+      "id": "17",
+      "name": "Thick Daal",
+      "price": 60,
+      "category": "Main Course",
+      "enabled": true
+    },
+    {
+      "id": "18",
+      "name": "Chocolate Cupcake",
+      "price": 70,
+      "category": "Desserts / Others",
+      "enabled": true
+    },
+    {
+      "id": "19",
+      "name": "Kheer",
+      "price": 99,
+      "category": "Desserts / Others",
+      "enabled": true
+    },
+    {
+      "id": "20",
+      "name": "Overnight Oats",
+      "price": 110,
+      "category": "Desserts / Others",
+      "enabled": true
+    }
+  ],
+  "categories": [
+    "Egg Items",
+    "Pasta & Snacks",
+    "Main Course",
+    "Desserts / Others"
+  ],
+  "accounts": [
+    "baidantika",
+    "Anisha",
+    "krrish",
+    "Yashi"
+  ]
+}
